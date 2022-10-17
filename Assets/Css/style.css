@@ -1,0 +1,352 @@
+*{
+    margin: 0;;
+    padding: 0%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+html{
+    font: normal 16px sans-serif;
+}
+
+nav{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    opacity: 0.75;
+    color:#000;
+
+}
+a:hover{
+    color: #80a3db;
+    opacity: 1;
+}
+a.btn{
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    background-color: #3f51b5;
+    opacity: 1;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px;
+}
+header{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:35px 100px 0;
+    animation: 1.2s Fadein 0.5s forwards;
+    opacity: 0;
+    
+}
+@keyframes Fadein {
+    100%{
+        opacity: 1;
+    }
+}
+header h2{
+    font-family: Montserrat, sans-serif;
+    font: bold;
+}
+header nav{
+    display: flex;
+    margin-right: -15px;;
+    
+}
+header nav li {
+    margin-right: 15px;;
+}
+
+/* Hero Styles */
+
+.hero{
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    min-height: 100vh;;
+    
+}
+.hero .background-image{
+    position: absolute;
+    top: 0%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    z-index: -1;
+    background-color: #80a3db;
+}
+.hero h1{
+    font: bold 68px "Poppins", sans-serif ;
+    margin-bottom: 15px;
+    color:black;
+}
+.hero h3{
+    font: normal 28px "Poppins", sans-serif;
+    margin-bottom: 40px; 
+    color: black;
+}
+.hero a.btn{
+    padding:  20px 46px;
+    color: white;
+}
+
+.hero-content-area{
+    opacity: 0;
+    margin-top: 100px;
+    animation: 1.8s slideFade 1s forwards;
+}
+@keyframes slideFade {
+    100%{
+        opacity: 1;
+        margin: 0;
+    }
+}
+
+hr{
+    width: 200px;
+    height: 5px;
+    background-color: #3f51b5;
+    border: none;
+    margin-bottom: 30px;
+}
+.destination{
+    margin-top: 20px;;
+    background-color: #fff;
+}
+.destination .title{
+    color: rgb(31, 31, 31);
+    text-transform:capitalize;
+    font:bold 32px "Montserrat";
+    font-weight: 500px;
+    margin-bottom: 40px;
+}
+.destination p{
+    color: rgb(51, 51, 51);
+    max-width: 760.9px;
+    line-height: 1.5;
+    text-align: center;
+    margin-bottom: 30px;
+    
+}
+.grid{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.grid ul{
+    display: flex;
+    width: 100%;
+}
+.destination .grid li{
+    list-style: none;
+    width: 100%;
+    height: 400px;
+    padding:  1px;
+    background-repeat: no-repeat;
+    margin: 1px 0.2px;
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+}
+.destination .grid li.sm{
+    flex-basis: 40%;
+}
+.destination .grid li.lg{
+    flex-basis: 60%;
+}
+.Tours{
+    margin-top: 20px;;
+    background-color: rgb(224, 239, 242);
+}
+.Tours .title{
+    color: rgb(57, 57, 57);
+    text-transform:capitalize;
+    font:bold 32px "Montserrat";
+    font-weight: 500px;
+    margin-bottom: 40px;
+}
+.Tours p{
+    color: rgb(51, 51, 51);
+    max-width: 760.9px;
+    line-height: 1.5;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.Tours ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 300px;
+}
+.Tours ul li{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    list-style: none;
+    height: 200px;;
+    padding-top: 40px ;
+    padding-bottom: 300px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 10px;
+
+}
+.Tours>ul>li>img,h3{
+    text-align: center;
+    align-items: center;
+    align-self: center;
+  color: rgb(13, 50, 58);
+}
+.Tours ul li img{
+    margin-bottom: 15px;;
+}
+.Tours ul li h3{
+    text-transform: uppercase;
+    margin-bottom: 15px;;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+footer div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer section{
+    flex-basis: 639px;
+}
+footer section h2{
+    text-align: center;
+    font: bold 24px poppins;
+    margin-bottom: 13px;
+    padding: 5px;
+}
+footer section h4{
+    font: normal 10px p;
+    text-align: center;
+}
+footer nav{
+    display: flex;
+    width: 100%;
+    height: 312px;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: stretch;
+    align-items: center;
+}
+footer nav div{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 69%;
+}
+footer nav div hr{
+    margin: 13px;
+    width: 64%;
+    height: 2px;
+    color: #3f51b5;
+}
+footer nav div h5{
+    font: normal 16px menu;
+}
+footer nav div h3{
+    font: normal 22px Montserrat;
+}
+footer nav ul {
+    margin-inline-end: 0;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 69%;
+}
+footer nav ul li{
+    list-style: none;
+    height: 20.5%;
+    width: 13%;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+
+
+
+@media all and (max-width:580px){
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+    .destination p{
+        text-align: left;
+    }
+    .Tours ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .Tours ul li{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        list-style: none;
+        height: 400px;
+        padding-bottom: 450px;
+        margin-bottom: 80px;
+        
+    }
+    footer nav {
+        height:100%;
+    }
+    footer nav{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: stretch;
+        align-items: center;
+        height: 600px;
+    }
+    footer nav section{
+        flex-basis: 0;
+        height: 262px;
+        order: 1;
+    }
+    footer nav div{
+        padding: 20px 0;
+        order: 3;
+    }
+    footer nav ul{
+        margin: 20px;
+        padding: 20px 20px;
+        order: 2;
+    }
+    footer nav ul li{
+        margin: 4px 8px;
+    align-items: center;
+    list-style: none;
+    height: 84.5%;
+    width: 14%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+    }
+}
